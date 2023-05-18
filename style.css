@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:url(./images/bottle.jpg);
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.5; */
+}
+.calculator{
+    /* background-color: rgb(226, 202, 248); */
+    background-color: #303131;
+    border-radius: 10px;
+    padding: 40px 15px 15px;
+}
+form input{
+    width: 70px;
+    background-color: #303131;
+    color: white;
+    /* border: 1px salmon; */
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: -8px -8px 7px rgba(255, 255, 255, 0.1),  5px 5px 8px rgba(0, 0, 0, 0.2);  
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+.equal{
+    width: 155px;
+}
+.side{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 20px 0;
+}
+.side input{
+    box-shadow: none;
+    font-size: 40px;
+    flex: 1;
+    color: yellow;
+    text-align: end;
+}
+/* .back{
+    background-image: none;
+} */
+
+
+
+/* //////////////////////// */
+
+
+@media screen and ( min-width: 320px) and (max-width :480px){
+    .container{
+       width: 100%;
+       display: inline-block;
+    }
+    .center{
+        width: 100%;
+    }
+    .center input{
+        width: calc(25% - 14px);
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .equal{
+        width: 46% !important;
+    }
+      
+}
+    
+
